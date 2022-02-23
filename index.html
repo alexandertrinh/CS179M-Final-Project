@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Crane Program</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+
+    <div class="header-bar">
+        <button class = "manifest-button">Manifest</button>
+        <button class = "log-entry-button">Log Entry</button>
+        <div class = "manifest-title">Manifest Title</div>
+        <button class = "finish-button">Finish</button>
+        <button class = "sign-out-button">Sign Out</button>
+    </div>
+
+    <div class="main-body">
+        <div class="three-side-buttons">
+            <button class="load-button" onClick="loadButtonPressed()">Load</button>
+            <button class="unload-button" onClick="unloadButtonPressed()">Unload</button>
+            <button class="balance-button" onClick="balanceButtonPressed()">Balance</button>
+        </div>
+    
+        <table class="grid" id="grid"></table>
+
+        <div class="right-side-bar">
+            <div class="time-info-box">
+                <div>Total Est. Time</div>
+                <div>Est. Time</div>
+            </div>
+            <div class="move-info-box">
+                <div>Empty Box For Steps</div>
+            </div>
+        </div>
+
+    </div>
+
+  </body>
+
+</html>

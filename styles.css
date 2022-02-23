@@ -1,0 +1,163 @@
+body {
+    font-family: "Helvetica Neue";
+    background-color: #a1dbff;
+    color: black;
+}
+
+.header-bar {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.manifest-button {
+    margin: 10px;
+    margin-right: 40px;
+    width: 150px;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 10px;
+    border-color: white;
+    background-color: white;
+}
+
+.log-entry-button {
+    margin: 10px;
+    margin-right: 40px;
+    width: 150px;
+    border-radius: 8px;
+    font-size: 20px;
+    border-color: white;
+    background-color: white;
+}
+
+.manifest-title {
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.finish-button {
+    margin: 10px;
+    margin-left: 40px;
+    width: 150px;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+.sign-out-button {
+    margin: 10px;
+    margin-left: 40px;
+    width: 150px;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+.main-body {
+    display: flex;
+    justify-content: center;
+}
+
+.three-side-buttons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 4em;
+    width: 200px;
+}
+
+.load-button {
+    margin: 15px;
+    margin-right: 10px;
+    margin-top: 100px;
+    padding: 10px;
+    width: 150px;
+    border-radius: 8px;
+    font-size: 20px;
+    border-color: #008CBA;
+    background-color: #008CBA;
+    color: white;
+}
+
+.unload-button {
+    margin: 15px;
+    margin-right: 10px;
+    margin-top: 50px;
+    padding: 10px;
+    width: 150px;
+    border-radius: 8px;
+    font-size: 20px;
+    border-color: #008CBA;
+    background-color: #008CBA;
+    color: white;
+}
+
+.balance-button {
+    margin: 15px;
+    margin-right: 10px;
+    margin-top: 50px;
+    padding: 10px;
+    width: 150px;
+    border-radius: 8px;
+    font-size: 20px;
+    border-color: #000000;
+    background-color: #000000;
+    color: white;
+}
+
+.grid {
+    min-width: 500px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    margin-right: 10px;
+    flex-wrap: wrap;
+  }
+
+.grid>tr {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.grid>tr>td {
+    border: 1px solid black;
+    height: 50px;
+    width: 60px;
+    margin: 1px;
+    padding: 0px;
+}
+
+.right-side-bar {
+    height: 80%;
+    width: 300px;
+    margin-right: 0;
+    margin-left: 10px;
+    background-color: white;
+}
+
+.time-info-box {
+    border: 3px solid black;
+    border-bottom: 0;
+    height: 70px;
+    margin: 0;
+    padding: 10px;
+}
+
+.move-info-box {
+    border: 3px solid black;
+    height: 440px;
+    margin: 0 auto;
+    padding: 10px;
+}
