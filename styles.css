@@ -2,6 +2,8 @@ body {
     font-family: "Helvetica Neue";
     background-color: #a1dbff;
     color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 .header-bar {
@@ -11,21 +13,23 @@ body {
     text-align: center;
     padding: 0;
     margin-bottom: 5px;
+    height: 50px;
 }
 
 .manifest-button {
-    margin: 10px;
+    margin: 2px;
     margin-right: 40px;
     width: 150px;
     border-radius: 8px;
     font-size: 20px;
     padding: 10px;
-    border-color: white;
-    background-color: white;
+    border-color: black;
+    background-color: black;
+    color: white;
 }
 
 .log-entry-button {
-    margin: 10px;
+    margin: 2px;
     margin-right: 40px;
     width: 150px;
     border-radius: 8px;
@@ -35,12 +39,12 @@ body {
 }
 
 .manifest-title {
-    margin-top: 10px;
-    font-size: 40px;
+    margin-top: 5px;
+    font-size: 35px;
 }
 
 .finish-button {
-    margin: 10px;
+    margin: 2px;
     margin-left: 40px;
     width: 150px;
     border-radius: 8px;
@@ -51,7 +55,7 @@ body {
 }
 
 .sign-out-button {
-    margin: 10px;
+    margin: 2px;
     margin-left: 40px;
     width: 150px;
     border-radius: 8px;
@@ -71,13 +75,16 @@ body {
     flex-direction: column;
     text-align: center;
     font-size: 4em;
-    width: 200px;
+    width: 150px;
+    min-width: 180px;
+    margin: 0;
+    padding: 0;
 }
 
 .load-button {
     margin: 15px;
-    margin-right: 10px;
-    margin-top: 100px;
+    margin-right: 0px;
+    margin-top: 150px;
     padding: 10px;
     width: 150px;
     border-radius: 8px;
@@ -89,20 +96,20 @@ body {
 
 .unload-button {
     margin: 15px;
-    margin-right: 10px;
+    margin-right: 0px;
     margin-top: 50px;
     padding: 10px;
     width: 150px;
     border-radius: 8px;
     font-size: 20px;
-    border-color: #008CBA;
-    background-color: #008CBA;
-    color: white;
+    border-color: white;
+    background-color: white;
+    color: #008CBA;
 }
 
 .balance-button {
     margin: 15px;
-    margin-right: 10px;
+    margin-right: 0px;
     margin-top: 50px;
     padding: 10px;
     width: 150px;
@@ -114,34 +121,35 @@ body {
 }
 
 .grid {
-    min-width: 500px;
-    border: 3px solid black;
+    border: 2px solid black;
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0px;
+    padding: 0;
     background-color: #ffffff;
-    margin-right: 10px;
     flex-wrap: wrap;
   }
 
-.grid>tr {
+.grid>div {
     margin: 0px;
     padding: 0px;
     border: 0px;
+    display: flex;
+    flex-direction: row;
 }
 
-.grid>tr>td {
+.grid>div>div {
     border: 1px solid black;
-    height: 50px;
+    height: 55px;
     width: 60px;
-    margin: 1px;
+    margin: 0px;
     padding: 0px;
 }
 
 .right-side-bar {
-    height: 80%;
-    width: 300px;
+    height: 100%;
+    width: 250px;
+    min-width: 200px;
     margin-right: 0;
     margin-left: 10px;
     background-color: white;
@@ -157,7 +165,31 @@ body {
 
 .move-info-box {
     border: 3px solid black;
-    height: 440px;
+    height: 455px;
     margin: 0 auto;
     padding: 10px;
+}
+
+.buffer{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.buffer>div {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.buffer>div>div {
+    border: 1px solid black;
+    height: 15px;
+    width: 20px;
+    margin: 0px;
+    padding: 0px;
 }
