@@ -1,5 +1,5 @@
 
-
+//makes the grid boxes for buffer and main grid zones
 window.onload = function makeGrid() {
 
     let table = document.getElementById("grid");
@@ -42,4 +42,3 @@ window.onload = function makeGrid() {
 
     console.log('buffer grid loaded');
 }
-

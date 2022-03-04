@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Crane Login</title>
+    
+    <link rel="stylesheet" href="../static/css/index.css"/>
+  </head>
+  <body>
+
+    <div class="login-box">
+      <h1 id="welcome-message">Welcome to Crane Helper</h1>
+
+      <p id="login-text">Name:</p>
+      <p><input id="text-box" type="text" name="text-box"></p>
+      <p><input id="submit-button" type="submit" value="Login"></p>
+
+    </div>
+
+    <div class="footer">Powered by Team Fortnight</div>
+
+    <script>
+      //communicates to main.py and sends the operator's name to backend, also loads newpage
+      document.getElementById("submit-button").onclick = function() {
+          login_name = document.getElementById("text-box").value;
+
+          fetch("/loadManifestPage", {
+              method: "POST",
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(login_name),
+              })
+              .then(response => response.json())
+              .then(json => {
+                  console.log('new page loaded: ');
+                  
+              })
+              .catch(err => { console.log(err); })
+          };
+    </script>
+
+  </body>
+
+</html>

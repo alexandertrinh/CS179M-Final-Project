@@ -1,0 +1,47 @@
+body {
+    font-family: "Helvetica Neue";
+    background-color: #a1dbff;
+    color: black;
+}
+
+#welcome-message {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.login-box {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #ffffff;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    height: 308px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.footer {
+    margin: auto;
+    margin-top: 400px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#login-text {
+    margin-left: 40px;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+#text-box {
+    margin-top: 4px;
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+#submit-button {
+    margin-left: 40px;
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: "Helvetica Neue";;
+}
