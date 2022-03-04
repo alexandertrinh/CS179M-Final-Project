@@ -126,8 +126,6 @@ body {
     flex-direction: column;
     margin: 0px;
     padding: 0;
-    background-color: #ffffff;
-    flex-wrap: wrap;
   }
 
 .grid>div {
@@ -144,6 +142,7 @@ body {
     width: 60px;
     margin: 0px;
     padding: 0px;
+    background-color: #ffffff;
 }
 
 .right-side-bar {
@@ -170,26 +169,25 @@ body {
     padding: 10px;
 }
 
-.buffer{
+.buffer-grid{
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+.buffer-grid>div {
     margin: 0px;
     padding: 0px;
     border: 0px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
 }
 
-.buffer>div {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    display: flex;
-    flex-direction: row;
-}
-
-.buffer>div>div {
+.buffer-grid>div>div {
     border: 1px solid black;
-    height: 15px;
-    width: 20px;
+    height: 45px;
+    width: 50px;
     margin: 0px;
     padding: 0px;
+    background-color: #ffffff;
 }
