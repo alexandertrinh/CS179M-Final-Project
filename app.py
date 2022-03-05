@@ -13,8 +13,8 @@ app.static_folder = 'static'
 # ...
 
 @app.route("/", methods=["POST", "GET"])
-def index():
-    render_template("index.html")
+def login():
+    return render_template("login.html")
 
 
 # mainfest page loaded
@@ -22,15 +22,16 @@ def index():
 def loadManifestPage():
     if request.method == "POST":
         name = request.get_json() #grabs the name of operator from text box
-        if name == null:
-            return render_template("index.html")
+        if name == "":
+            return redirect("index.html")
         else:
             #record to logfile the name of operator login time
+            print(name)
             return render_template("manifest.html")
     else:
         return render_template("index.html")
 
 
 # This is so we don't have to keep running python -m flask run everytime we make a change
-if __name__ == '__main__':
+if __name__ == "__app__":
     app.run(debug=True);
