@@ -8,30 +8,31 @@ UPLOAD_FOLDER = 'data/'
 ALLOWED_EXTENSIONS = {'csv', 'txt'}
 app = Flask(__name__)
 app.static_folder = 'static'
+app.config['SERVER_NAME'] = '127.0.0.1:5000'
 
 # global variables
 # ...
 
 @app.route("/", methods=["POST", "GET"])
-def login():
-    return render_template("login.html")
+def index():
+    return render_template("index.html")
 
 
 # mainfest page loaded
-@app.route("/loadManifestPage", methods=["POST", "GET"])
-def loadManifestPage():
+@app.route("/manifest", methods=["POST", "GET"])
+def manifest():
     if request.method == "POST":
         name = request.get_json() #grabs the name of operator from text box
         if name == "":
-            return redirect("index.html")
+            return render_template("mainpage.html")
         else:
             #record to logfile the name of operator login time
             print(name)
-            return render_template("manifest.html")
+            return redirect("manifest.html")
     else:
         return render_template("index.html")
 
 
 # This is so we don't have to keep running python -m flask run everytime we make a change
-if __name__ == "__app__":
+if __name__ == "__main__":
     app.run(debug=True);
