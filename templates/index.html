@@ -24,7 +24,7 @@
       document.getElementById("submit-button").onclick = function() {
           login_name = document.getElementById("text-box").value;
 
-          fetch("/loadManifestPage", {
+          fetch("/manifest", {
               method: "POST",
               headers: {
                   'Content-Type': 'application/json',
